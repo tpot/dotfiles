@@ -3,6 +3,11 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 . ${HOME}/.bash_aliases
 
 # Homebrew setup and config
+# https://docs.brew.sh/Manpage#environment
+export HOMEBREW_API_AUTO_UPDATE_SECS=7200
+export HOMEBREW_GIT_EMAIL={{ .email | quote }}
+export HOMEBREW_GIT_NAME="Tim Potter"
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
