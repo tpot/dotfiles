@@ -1,0 +1,11 @@
+# .bashrc is only executed for interactive non-login shells,
+# except for macOS which runs a login shell by default for each
+# new terminal window.
+
+# Source aliases for interactive shells
+. ${HOME}/.bash_aliases
+
+# Set prefix for prompt when messing with Chezmoi git repo
+if [ -n "${CHEZMOI_SUBSHELL}" ]; then
+  PS1="(chezmoi) $PS1"
+fi
