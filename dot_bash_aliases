@@ -7,3 +7,6 @@ alias gdc="git diff --cached"
 alias gl="git log"
 alias glp="git log -p"
 alias gs="git status"
+
+# Misc
+alias cm=chezmoi
