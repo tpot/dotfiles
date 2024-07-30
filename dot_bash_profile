@@ -11,3 +11,9 @@ export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 
 # Rancher Desktop setup and config
 export PATH="~/.rd/bin:$PATH"
+
+# node@20 (current LTS) is keg-only and not smlinked into
+# /opt/homebrew so post-install by hand
+export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
+export LDFLAGS="${LDFLAGS} -L/opt/homebrew/opt/node@20/lib"
+export CPPFLAGS="${CPPFLAGS} -I/opt/homebrew/opt/node@20/include"
