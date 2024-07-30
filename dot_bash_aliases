@@ -1,0 +1,9 @@
+# Git aliases
+alias ga="git add"
+alias gap="git add -p"
+alias gc="git commit"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias gl="git log"
+alias glp="git log -p"
+alias gs="git status"

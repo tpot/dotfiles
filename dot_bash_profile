@@ -1,0 +1,3 @@
+# Bash config
+export BASH_SILENCE_DEPRECATION_WARNING=1
+. ${HOME}/.bash_aliases
