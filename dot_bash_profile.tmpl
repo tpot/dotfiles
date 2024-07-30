@@ -22,3 +22,6 @@ export PATH="~/.rd/bin:$PATH"
 export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 export LDFLAGS="${LDFLAGS} -L/opt/homebrew/opt/node@20/lib"
 export CPPFLAGS="${CPPFLAGS} -I/opt/homebrew/opt/node@20/include"
+
+# fzf setup and config
+which -s fzf && eval "$(fzf --bash)"
