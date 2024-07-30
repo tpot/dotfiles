@@ -1,3 +1,13 @@
 # Bash config
 export BASH_SILENCE_DEPRECATION_WARNING=1
 . ${HOME}/.bash_aliases
+
+# Homebrew setup and config
+eval "$(/opt/homebrew/bin/brew shellenv)"
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+
+# Rustup setup and config
+export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
+
+# Rancher Desktop setup and config
+export PATH="~/.rd/bin:$PATH"
