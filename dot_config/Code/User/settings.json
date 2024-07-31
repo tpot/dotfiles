@@ -2,6 +2,15 @@
     // Don't show ignored files in Explorer window
     "explorer.excludeGitIgnore": true,
 
+    // Autosave a file when focus moves away from it
+    "files.autoSave": "onFocusChange",
+
+    // My personal whitespace settings: trim trailing whitespace on save,
+    // insert a final newline at EOF but don't show in the editor.
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "editor.renderFinalNewline": "off"
+
     // Don't send off stuff to Microsoft
     "telemetry.enableTelemetry": false,
 
