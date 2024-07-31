@@ -1,5 +1,11 @@
 {
+    // Don't show ignored files in Explorer window
+    "explorer.excludeGitIgnore": true,
+
+    // Don't send off stuff to Microsoft
     "telemetry.enableTelemetry": false,
+
+    // Define tags used by AWS CloudFormation templates
     "yaml.customTags": [
         "!And scalar",
         "!If scalar",
