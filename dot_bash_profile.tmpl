@@ -39,7 +39,9 @@ export CPPFLAGS="${CPPFLAGS} -I${HOMEBREW_PREFIX}/opt/node@20/include"
 # fzf setup and config
 which -s fzf && eval "$(fzf --bash)"
 
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# pyenv setup and config
+if which -s pyenv; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
