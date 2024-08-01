@@ -1,6 +1,7 @@
 # Bash config
 export BASH_SILENCE_DEPRECATION_WARNING=1
 HISTCONTROL=ignorespace
+FIGNORE=.DS_Store
 
 . ${HOME}/.bash_aliases
 
@@ -37,3 +38,8 @@ export CPPFLAGS="${CPPFLAGS} -I${HOMEBREW_PREFIX}/opt/node@20/include"
 
 # fzf setup and config
 which -s fzf && eval "$(fzf --bash)"
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
