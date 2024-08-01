@@ -25,14 +25,14 @@ fi
 	. "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
 
 # Rustup setup and config
-export PATH="${HOMEBREW_PREFIX}/opt/rustup/bin:$PATH"
+export PATH="${HOMEBREW_PREFIX}/opt/rustup/bin:${PATH}"
 
 # Rancher Desktop setup and config
-export PATH="${HOME}/.rd/bin:$PATH"
+export PATH="${HOME}/.rd/bin:${PATH}"
 
 # node@20 (current LTS) is keg-only and not smlinked into
 # ${HOMEBREW_PREFIX} so post-install by hand
-export PATH="${HOMEBREW_PREFIX}/opt/node@20/bin:$PATH"
+export PATH="${HOMEBREW_PREFIX}/opt/node@20/bin:${PATH}"
 export LDFLAGS="${LDFLAGS} -L${HOMEBREW_PREFIX}/opt/node@20/lib"
 export CPPFLAGS="${CPPFLAGS} -I${HOMEBREW_PREFIX}/opt/node@20/include"
 
@@ -41,7 +41,7 @@ which -s fzf && eval "$(fzf --bash)"
 
 # pyenv setup and config
 if which -s pyenv; then
-  export PYENV_ROOT="$HOME/.pyenv"
-  [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+  export PYENV_ROOT="${HOME}/.pyenv"
+  [[ -d ${PYENV_ROOT}/bin ]] && export PATH="${PYENV_ROOT}/bin:${PATH}"
   eval "$(pyenv init -)"
 fi
