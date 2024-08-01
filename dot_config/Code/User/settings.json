@@ -32,5 +32,12 @@
         "!Select sequence",
         "!Split sequence",
         "!Join sequence"
-    ]
+    ],
+
+    // SQL formatting settings
+    "[sql]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+    },
+    "Prettier-SQL.keywordCase": "upper"
 }
