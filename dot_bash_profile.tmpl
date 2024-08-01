@@ -7,6 +7,7 @@ FIGNORE=.DS_Store
 
 # Homebrew setup and config
 # https://docs.brew.sh/Manpage#environment
+export HOMEBREW_NO_ENV_HINTS=1
 export HOMEBREW_API_AUTO_UPDATE_SECS=7200
 export HOMEBREW_GIT_EMAIL={{ .email | quote }}
 export HOMEBREW_GIT_NAME="Tim Potter"
