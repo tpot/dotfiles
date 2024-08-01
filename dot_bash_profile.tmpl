@@ -10,20 +10,30 @@ export HOMEBREW_API_AUTO_UPDATE_SECS=7200
 export HOMEBREW_GIT_EMAIL={{ .email | quote }}
 export HOMEBREW_GIT_NAME="Tim Potter"
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
-[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+# Figure out Homebrew location from the three possible places it's
+# likely to be in
+BREW=$(whereis -b \
+  -B /usr/local/brew/bin /opt/homebrew/bin ${HOME}/homebrew/bin \
+  -f brew | awk '{ print $2 }')
+
+if [ -x ${BREW} ]; then
+  eval "$(${BREW} shellenv)"
+fi
+
+[[ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]] && \
+	. "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
 
 # Rustup setup and config
-export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
+export PATH="${HOMEBREW_PREFIX}/opt/rustup/bin:$PATH"
 
 # Rancher Desktop setup and config
 export PATH="~/.rd/bin:$PATH"
 
 # node@20 (current LTS) is keg-only and not smlinked into
-# /opt/homebrew so post-install by hand
-export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
-export LDFLAGS="${LDFLAGS} -L/opt/homebrew/opt/node@20/lib"
-export CPPFLAGS="${CPPFLAGS} -I/opt/homebrew/opt/node@20/include"
+# ${HOMEBREW_PREFIX} so post-install by hand
+export PATH="${HOMEBREW_PREFIX}/opt/node@20/bin:$PATH"
+export LDFLAGS="${LDFLAGS} -L${HOMEBREW_PREFIX}/opt/node@20/lib"
+export CPPFLAGS="${CPPFLAGS} -I${HOMEBREW_PREFIX}/opt/node@20/include"
 
 # fzf setup and config
 which -s fzf && eval "$(fzf --bash)"
