@@ -9,7 +9,7 @@
     // insert a final newline at EOF but don't show in the editor.
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-    "editor.renderFinalNewline": "off"
+    "editor.renderFinalNewline": "off",
 
     // Don't send off stuff to Microsoft
     "telemetry.enableTelemetry": false,
