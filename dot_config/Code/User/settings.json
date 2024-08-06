@@ -12,7 +12,7 @@
     "editor.renderFinalNewline": "off",
 
     // Don't send off stuff to Microsoft
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
 
     // Define tags used by AWS CloudFormation templates
     "yaml.customTags": [
