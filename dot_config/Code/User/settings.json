@@ -34,10 +34,12 @@
         "!Join sequence"
     ],
 
-    // SQL formatting settings
+    // SQL
     "[sql]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+        "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
     },
-    "Prettier-SQL.keywordCase": "upper"
+
+    "sqlfluff.executablePath": "${userHome}/.local/bin/sqlfluff",
+    "sqlfluff.dialect": "duckdb"
 }
