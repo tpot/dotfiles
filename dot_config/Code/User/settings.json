@@ -41,5 +41,12 @@
     },
 
     "sqlfluff.executablePath": "${userHome}/.local/bin/sqlfluff",
-    "sqlfluff.dialect": "duckdb"
+    "sqlfluff.dialect": "duckdb",
+
+    // Word wrapping
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 75,
+
+    "rewrap.autoWrap.enabled": true,
+    "rewrap.autoWrap.notification": "text"
 }
