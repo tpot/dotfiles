@@ -42,6 +42,13 @@
 
     "sqlfluff.executablePath": "${userHome}/.local/bin/sqlfluff",
     "sqlfluff.dialect": "duckdb",
+    "sqlfluff.rules": [
+        // Must configure rules in .sqlfluff file, not here
+    ],
+    "sqlfluff.excludeRules": [
+        "ambiguous.column_count",
+        "layout.end_of_file"
+    ],
 
     // Word wrapping
     "editor.wordWrap": "wordWrapColumn",
