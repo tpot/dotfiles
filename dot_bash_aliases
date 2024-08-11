@@ -10,3 +10,4 @@ alias gs="git status"
 
 # Misc
 alias cm=chezmoi
+alias mp=multipass
