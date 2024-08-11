@@ -51,7 +51,6 @@
     ],
 
     // Word wrapping
-    "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 75,
 
     "rewrap.autoWrap.enabled": true,
