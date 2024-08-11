@@ -48,5 +48,12 @@
     "editor.wordWrapColumn": 75,
 
     "rewrap.autoWrap.enabled": true,
-    "rewrap.autoWrap.notification": "text"
+    "rewrap.autoWrap.notification": "text",
+
+    // YAML schema definitions
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/canonical/cloud-init/main/cloudinit/config/schemas/versions.schema.cloud-config.json": [
+            "userdata{,-*}.{yml,yaml}"
+        ]
+    }
 }
