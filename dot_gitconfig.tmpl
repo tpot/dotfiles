@@ -1,6 +1,8 @@
 [user]
 	name = Tim Potter
 	email = {{ .email | quote }}
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RF
 [diff]
 	noprefix = true
 [pull]
@@ -9,3 +11,5 @@
 	lineNumber = true
 [merge]
 	conflictstyle = diff3
+[interactive]
+	diffFilter = diff-so-fancy --patch
