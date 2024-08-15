@@ -55,4 +55,9 @@ if which -s pyenv; then
   eval "$(pyenv init -)"
 fi
 
+# Direnv setup and config
+if which -s direnv; then
+  eval "$(direnv hook bash)"
+fi
+
 {{- end }}
