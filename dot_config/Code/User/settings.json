@@ -16,21 +16,22 @@
 
     // Define tags used by AWS CloudFormation templates
     "yaml.customTags": [
-        "!And scalar",
-        "!If scalar",
+        "!And",
+        "!If",
         "!Not",
-        "!Equals scalar",
-        "!Or scalar",
-        "!FindInMap scalar",
+        "!Equals",
+        "!Or",
+        "!FindInMap sequence",
         "!Base64",
         "!Cidr",
         "!Ref",
         "!Sub",
-        "!GetAtt sequence",
+        "!GetAtt",
         "!GetAZs",
-        "!ImportValue sequence",
+        "!ImportValue",
+        "!Select",
         "!Select sequence",
-        "!Split sequence",
+        "!Split",
         "!Join sequence"
     ],
 
