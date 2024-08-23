@@ -1,7 +1,35 @@
 [
+    // Shift-Cmd-B runs default build task so it makes sense that
+    // we should have Shift-Command-T runs the default test task
     {
         "key": "shift+cmd+t",
         "command": "workbench.action.tasks.test",
         "when": "editorTextFocus"
+    },
+    // Some Emacs-esque key bindings whos lack irritates me
+    {
+        "key": "escape backspace",
+        "command": "deleteWordLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "escape f",
+        "command": "cursorWordRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "escape b",
+        "command": "cursorWordLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "escape shift+.",
+        "command": "cursorBottom",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "escape shift+,",
+        "command": "cursorTop",
+        "when": "textInputFocus"
     }
 ]
