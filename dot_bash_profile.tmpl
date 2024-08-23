@@ -61,3 +61,10 @@ if which -s direnv; then
 fi
 
 {{- end }}
+
+# Managed higher up but keep Rancher install script happy
+if false; then
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/s610249/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+fi
