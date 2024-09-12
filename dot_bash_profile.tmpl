@@ -15,6 +15,7 @@ export HOMEBREW_NO_ENV_HINTS=1
 export HOMEBREW_API_AUTO_UPDATE_SECS=$(echo 60*60*48 | bc)
 export HOMEBREW_GIT_EMAIL={{ .email | quote }}
 export HOMEBREW_GIT_NAME="Tim Potter"
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 # Figure out Homebrew location from the three possible places it's
 # likely to be in
