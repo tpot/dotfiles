@@ -58,5 +58,6 @@
     },
     "files.exclude": {
         "**/.gitkeep": true
-    }
+    },
+    "editor.minimap.enabled": false
 }
