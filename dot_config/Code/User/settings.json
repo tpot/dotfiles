@@ -44,6 +44,9 @@
     "sqlfluff.executablePath": "${userHome}/.local/bin/sqlfluff",
     "sqlfluff.dialect": "duckdb",
 
+    // Python
+    "python.analysis.extraPaths": [".direnv/python-3.9"],
+
     // Word wrapping
     "editor.wordWrapColumn": 75,
 
