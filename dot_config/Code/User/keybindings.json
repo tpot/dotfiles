@@ -31,5 +31,27 @@
         "key": "escape shift+,",
         "command": "cursorTop",
         "when": "textInputFocus"
+    },
+    // Paredit wrap around using keys they wrap
+    // e.g wraparound parens with '(' instead of 'P'
+    {
+        "key": "shift+alt+9",
+        "command": "paredit.wrapAroundParens",
+        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
+    },
+    {
+        "key": "alt+[",
+        "command": "paredit.wrapAroundSquare",
+        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
+    },
+    {
+        "key": "shift+alt+'",
+        "command": "paredit.wrapAroundQuote",
+        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
+    },
+    {
+        "key": "shift+alt+[",
+        "command": "paredit.wrapAroundCurly",
+        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
     }
 ]
