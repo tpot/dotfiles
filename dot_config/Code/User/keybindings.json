@@ -32,6 +32,12 @@
         "command": "cursorTop",
         "when": "textInputFocus"
     },
+    // Clojure mode
+    {
+        "key": "f5",
+        "command": "calva.loadFile",
+        "when": "editorTextFocus"
+    },
     // Paredit wrap around using keys they wrap
     // e.g wraparound parens with '(' instead of 'P'
     {
