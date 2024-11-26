@@ -10,27 +10,27 @@
     {
         "key": "escape backspace",
         "command": "deleteWordLeft",
-        "when": "textInputFocus"
+        "when": "textInputFocus && !suggestWidgetVisible"
     },
     {
         "key": "escape f",
         "command": "cursorWordRight",
-        "when": "textInputFocus"
+        "when": "textInputFocus && !suggestWidgetVisible"
     },
     {
         "key": "escape b",
         "command": "cursorWordLeft",
-        "when": "textInputFocus"
+        "when": "textInputFocus && !suggestWidgetVisible"
     },
     {
         "key": "escape shift+.",
         "command": "cursorBottom",
-        "when": "textInputFocus"
+        "when": "textInputFocus && !suggestWidgetVisible"
     },
     {
         "key": "escape shift+,",
         "command": "cursorTop",
-        "when": "textInputFocus"
+        "when": "textInputFocus && !suggestWidgetVisible"
     },
     // Clojure mode
     {
