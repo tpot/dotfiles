@@ -63,6 +63,11 @@ fi
 
 {{- end }}
 
+# Helm completion
+if which -s helm; then
+  eval "$(helm completion bash)"
+fi
+
 # Managed higher up but keep Rancher install script happy
 if false; then
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
