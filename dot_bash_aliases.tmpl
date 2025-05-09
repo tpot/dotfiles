@@ -2,7 +2,7 @@
 alias ga="git add"
 alias gap="git add -p"
 alias gb="git branch"
-alias gc="git commit"
+alias gc="git -c status.showUntrackedFiles=no commit"
 alias gd="git diff"
 alias gdc="git diff --cached"
 alias gl="git log --name-status"
@@ -23,6 +23,7 @@ alias dc="docker-compose"
 alias llm="uvx --quiet --with llm-ollama llm"
 alias tf=terraform
 alias kc=kubectl
+eval `complete -p kubectl | gsed 's/\<kubectl\>/kc/g'`
 alias vd="uvx --quiet --from visidata --with pyarrow vd"
 
 # kubectl

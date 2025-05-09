@@ -40,11 +40,12 @@ if [ -e ${HOME}/.rd/docker.sock ]; then
   export DOCKER_HOST=unix://${HOME}/.rd/docker.sock
 fi
 
-# node@20 (current LTS) is keg-only and not smlinked into
-# ${HOMEBREW_PREFIX} so post-install by hand
-export PATH="${HOMEBREW_PREFIX}/opt/node@20/bin:${PATH}"
-export LDFLAGS="${LDFLAGS} -L${HOMEBREW_PREFIX}/opt/node@20/lib"
-export CPPFLAGS="${CPPFLAGS} -I${HOMEBREW_PREFIX}/opt/node@20/include"
+# nvm setup and config
+if [ -e ${HOMEBREW_PREFIX}/opt/nvm ]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "${HOMEBREW_PREFIX}/opt/nvm/nvm.sh" ] && . "${HOMEBREW_PREFIX}/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "${HOMEBREW_PREFIX}/opt/nvm/etc/bash_completion.d/nvm" ] && . "${HOMEBREW_PREFIX}/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+fi
 
 # fzf setup and config
 which -s fzf && eval "$(fzf --bash)"
