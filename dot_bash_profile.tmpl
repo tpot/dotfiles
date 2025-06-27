@@ -78,6 +78,13 @@ if which -s helm; then
   eval "$(helm completion bash)"
 fi
 
+# Terraform completions
+if which -s terraform; then
+  alias tf=terraform
+  complete -C $(which terraform) terraform
+  complete -C $(which terraform) tf
+fi
+
 # Managed higher up but keep Rancher install script happy
 if false; then
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
