@@ -22,7 +22,7 @@ alias da="direnv allow"
 alias dc="docker-compose"
 alias tf=terraform
 alias kc=kubectl
-eval `complete -p kubectl | gsed 's/\<kubectl\>/kc/g'`
+complete -o default -F __start_kubectl kc
 
 # kubectl
 alias kc-ef2test="kubectl --kubeconfig ~/.kube/config.ef2test"
