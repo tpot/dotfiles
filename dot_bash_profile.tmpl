@@ -50,6 +50,10 @@ fi
 # fzf setup and config
 which -s fzf && eval "$(fzf --bash)"
 
+# carapace setup and config
+which -s carapace && export CARAPACE_BRIDGES=bash
+which -s carapace && source <(carapace _carapace)
+
 # pyenv setup and config
 if which -s pyenv; then
   export PYENV_ROOT="${HOME}/.pyenv"
