@@ -50,6 +50,12 @@
     "rewrap.autoWrap.enabled": true,
     "rewrap.autoWrap.notification": "text",
 
+    // Markdown
+    "[markdown]": {
+        "rewrap.autoWrap.enabled": false,
+        "editor.wordWrap": "on"
+    },
+
     // YAML schema definitions
     "yaml.schemas": {
         "https://raw.githubusercontent.com/canonical/cloud-init/main/cloudinit/config/schemas/versions.schema.cloud-config.json": [
