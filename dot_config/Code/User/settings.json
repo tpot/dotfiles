@@ -43,6 +43,9 @@
 
     "sqlfluff.executablePath": "${userHome}/.local/bin/sqlfluff",
     "sqlfluff.dialect": "duckdb",
+    "sqlfluff.linter.run": "onType",
+    "sqlfluff.format.enabled": true,
+    "sqlfluff.experimental.format.executeInTerminal": false,
 
     // Word wrapping
     "editor.wordWrapColumn": 75,
