@@ -15,6 +15,8 @@
 # Additionally, each config option is also explained in detail
 # on Ghostty's website, at https://ghostty.org/docs/config.
 
+copy-on-select = clipboard
+
 # Config syntax crash course
 # ==========================
 # # The config file consists of simple key-value pairs,
