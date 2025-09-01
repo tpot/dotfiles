@@ -65,8 +65,15 @@
             "userdata{,-*}.{yml,yaml}"
         ]
     },
+
+    // Filename associations
+    "files.associations": {
+        "*.md": "markdown"
+    },
+
     "files.exclude": {
         "**/.gitkeep": true
     },
+
     "editor.minimap.enabled": false
 }
