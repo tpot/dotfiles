@@ -75,5 +75,6 @@
         "**/.gitkeep": true
     },
 
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "direnv.restart.automatic": true
 }
