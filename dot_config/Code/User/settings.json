@@ -76,5 +76,13 @@
     },
 
     "editor.minimap.enabled": false,
-    "direnv.restart.automatic": true
+    "direnv.restart.automatic": true,
+
+    // Default path is "/usr/bin:/bin:/usr/sbin:/sbin" so add some extras
+    "terminal.integrated.env.osx": {
+        "PATH": "${env:PATH}:${env:HOME}/.local/bin:${env:HOMEBREW_PREFIX}/bin"
+    },
+    "terminal.integrated.env.linux": {
+        "PATH": "${env:PATH}:${env:HOME}/.local/bin"
+    }
 }
