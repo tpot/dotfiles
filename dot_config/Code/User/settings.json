@@ -92,6 +92,10 @@
     },
 
     "editor.minimap.enabled": false,
+    "editor.quickSuggestions": {
+        "other": "off"
+    },
+
     "direnv.restart.automatic": true,
 
     // Default path is "/usr/bin:/bin:/usr/sbin:/sbin" so add some extras
