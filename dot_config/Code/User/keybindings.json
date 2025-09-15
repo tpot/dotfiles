@@ -59,5 +59,15 @@
         "key": "shift+alt+[",
         "command": "paredit.wrapAroundCurly",
         "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
+    },
+    {
+        "key": "alt+up",
+        "command": "paredit.forwardUpSexp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+down",
+        "command": "paredit.backwardDownSexp",
+        "when": "editorTextFocus"
     }
 ]
