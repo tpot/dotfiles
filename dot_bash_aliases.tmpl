@@ -23,6 +23,7 @@ alias dc="docker-compose"
 alias kc=kubectl
 complete -o default -F __start_kubectl kc
 alias dbtf=~/.local/bin/dbt
+alias av=aws-vault
 
 # kubectl
 alias kc-ef2test="kubectl --kubeconfig ~/.kube/config.ef2test"
@@ -30,3 +31,4 @@ alias kc-ef2prod="kubectl --kubeconfig ~/.kube/config.ef2prod"
 
 # Python things
 alias marimo="uvx --quiet --with 'marimo[recommended]' marimo"
+alias ansible="uvx --quiet --from ansible-core ansible"
