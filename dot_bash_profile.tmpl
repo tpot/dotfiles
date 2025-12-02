@@ -86,6 +86,9 @@ if which -s terraform; then
   complete -C $(which terraform) tf
 fi
 
+# aws-vault setup
+export AWS_VAULT_KEYCHAIN_NAME=login
+
 # Managed higher up but keep Rancher install script happy
 if false; then
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
