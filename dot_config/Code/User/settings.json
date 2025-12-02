@@ -85,7 +85,8 @@
     // Filename associations
     "files.associations": {
         "*.md": "markdown",
-        ".sqlfluff": "ini",
+        "*.sql": "sql",
+        ".sqlfluff": "ini"
     },
 
     "files.exclude": {
