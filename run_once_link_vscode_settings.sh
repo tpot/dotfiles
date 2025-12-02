@@ -2,9 +2,11 @@
 
 # macOS Visual Studio Code settings file
 MACOS_VSCODE_SETTINGS="$HOME/Library/Application Support/Code/User/settings.json"
+MACOS_VSCODE_KEYBINDINGS="$HOME/Library/Application Support/Code/User/keybindings.json"
 
 # Linux Visual Studio Code settings file location
 LINUX_VSCODE_SETTINGS="$HOME/.config/Code/User/settings.json"
+LINUX_VSCODE_KEYBINDING="$HOME/.config/Code/User/keybindings.json"
 
 # Ensure the destination directory exists
 mkdir -p "$(dirname "$MACOS_VSCODE_SETTINGS")"
