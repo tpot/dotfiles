@@ -106,5 +106,6 @@
     },
     "terminal.integrated.env.linux": {
         "PATH": "${env:PATH}:${env:HOME}/.local/bin"
-    }
+    },
+    "claudeCode.preferredLocation": "panel"
 }

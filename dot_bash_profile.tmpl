@@ -55,12 +55,12 @@ if which -s fzf; then
   eval "$(fzf --bash)"
 fi
 
-# carapace setup 
+# carapace setup
 if which -s carapace; then
   source <(carapace _carapace bash)
 fi
 
-# pyenv setup 
+# pyenv setup
 if which -s pyenv; then
   export PYENV_ROOT="${HOME}/.pyenv"
   [[ -d ${PYENV_ROOT}/bin ]] && export PATH="${PYENV_ROOT}/bin:${PATH}"
@@ -88,6 +88,9 @@ fi
 
 # aws-vault setup
 export AWS_VAULT_KEYCHAIN_NAME=login
+
+# OpenCode setup
+export PATH=$PATH:${HOME}/.opencode/bin
 
 # Managed higher up but keep Rancher install script happy
 if false; then
